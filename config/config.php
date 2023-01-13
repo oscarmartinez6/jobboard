@@ -15,3 +15,5 @@ try {
 } catch(PDOException $e) {
     echo $e -> getMessage();
 }
+
+define("APPURL", "http://localhost/Proyectos/jobboard");

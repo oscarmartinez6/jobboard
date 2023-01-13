@@ -1,5 +1,5 @@
-<?php require "../includes/header.php"; ?>
 <?php require "../config/config.php"; ?>
+<?php require "../includes/header.php"; ?>
 <?php 
   if (isset($_POST['submit'])) {
     if (empty($_POST['username']) OR empty($_POST['email']) OR empty($_POST['password']) OR empty($_POST['re-password'])) {
@@ -33,7 +33,7 @@
       <div class="col-md-7">
         <h1 class="text-white font-weight-bold">Register</h1>
           <div class="custom-breadcrumbs">
-            <a href="#">Home</a> <span class="mx-2 slash">/</span>
+            <a href="<?php echo APPURL; ?>">Home</a> <span class="mx-2 slash">/</span>
             <span class="text-white"><strong>Register</strong></span>
           </div>
       </div>
